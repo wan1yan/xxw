@@ -8,5 +8,4 @@ hostname = %APPEND% *.bccoo.cn
 
 
 [Script]
-# 替换响应
-res=type=http-response,http-response ^https?:\/\/(?:[^/]+\.)?bccoo\.cn\/appserverapi\.ashx,script-path=https://raw.githubusercontent.com/wan1yan/xxw/main/modifyUserName.js,requires-body=1
+http-response ^https?:\/\/(?:[^/]+\.)?bccoo\.cn\/appserverapi\.ashx requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/wan1yan/xxw/main/modifyUserName.js
