@@ -8,7 +8,8 @@
 
         // 确保 ServerInfo 存在，并修改 UserName
         if (obj && obj.ServerInfo && typeof obj.ServerInfo === "object") {
-            obj.ServerInfo.UserName = "sid77844000";
+            obj.ServerInfo.UserName = "username";
+            console.log("修改后为"+obj.ServerInfo.UserName);
         } else {
             console.log("ServerInfo 结构不匹配，无法修改 UserName");
         }
