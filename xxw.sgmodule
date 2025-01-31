@@ -4,7 +4,8 @@
 
 
 [MITM]
-hostname = %APPEND% iosapp3.bccoo.cn
+hostname = %APPEND% *.bccoo.cn
+
 
 [Script]
 # 替换响应
