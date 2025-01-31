@@ -3,4 +3,4 @@ hostname = %APPEND% www.iosapp2.bccoo.cn
 
 [Script]
 # 替换响应
-res=type=http-response,pattern=iosapp2.bccoo.cn/appserverapi.ashx,script-path=https://raw.githubusercontent.com/wan1yan/xxw/main/xiugai.js,requires-body=1
+res=type=http-response,pattern=iosapp2.bccoo.cn/appserverapi.ashx,script-path=https://raw.githubusercontent.com/wan1yan/xxw/main/modifyUserName.js,requires-body=1
