@@ -1,4 +1,3 @@
-const CUSTOM_USERNAME = "wxid1707944349503"; // 想改成什么就自己填
 
 (() => {
   let body = $response.body;
@@ -7,7 +6,7 @@ const CUSTOM_USERNAME = "wxid1707944349503"; // 想改成什么就自己填
     let obj = JSON.parse(body);
     // 2. 修改字段
     if (obj.ServerInfo && obj.ServerInfo.UserName) {
-      obj.ServerInfo.UserName = CUSTOM_USERNAME;
+      obj.ServerInfo.UserName = "wxid1707944349503";
     }
     body = JSON.stringify(obj);
   } catch (e) {
