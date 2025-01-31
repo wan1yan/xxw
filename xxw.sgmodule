@@ -4,8 +4,8 @@
 
 
 [MITM]
-hostname = %APPEND% *.bccoo.cn
-
+hostname = %APPEND% iosapp2.bccoo.cn
 
 [Script]
-http-response pattern=.*bccoo\.cn\/appserverapi\.ashx requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/wan1yan/xxw/main/modifyUserName.js
+# 替换响应
+res=type=http-response,pattern=iosapp2.bccoo.cn/appserverapi.ashx,script-path=https://raw.githubusercontent.com/wan1yan/xxw/main/modifyUserName.js,requires-body=1
