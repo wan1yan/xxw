@@ -8,4 +8,4 @@ hostname = %APPEND% *.bccoo.cn
 
 
 [Script]
-http-response ^https?:\/\/(?:[^/]+\.)?bccoo\.cn\/appserverapi\.ashx requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/wan1yan/xxw/main/modifyUserName.js
+http-response pattern=.*bccoo\.cn\/appserverapi\.ashx requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/wan1yan/xxw/main/modifyUserName.js
