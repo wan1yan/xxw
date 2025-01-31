@@ -1,15 +1,13 @@
 (() => {
     let res = $response;  // 直接获取整个响应对象
     let body = res.body;
-    let username =$argument;
-    console.log("参数为"+username);
+
     try {
         let obj = JSON.parse(body);  // 解析 JSON 数据
 
         // 确保 ServerInfo 存在，并修改 UserName
         if (obj && obj.ServerInfo && typeof obj.ServerInfo === "object") {
-            obj.ServerInfo.UserName = "$argument";
-            console.log("修改后为"+obj.ServerInfo.UserName);
+            obj.ServerInfo.UserName = "sid77844000";
         } else {
             console.log("ServerInfo 结构不匹配，无法修改 UserName");
         }
