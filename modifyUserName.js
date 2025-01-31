@@ -6,7 +6,7 @@
     let obj = JSON.parse(body);
     // 2. 修改字段
     if (obj.ServerInfo && obj.ServerInfo.UserName) {
-      obj.ServerInfo.UserName = "wxid1707944349503";
+      obj.ServerInfo.UserName = "sid77844136";
     }
     body = JSON.stringify(obj);
   } catch (e) {
