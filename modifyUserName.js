@@ -1,4 +1,4 @@
-const CUSTOM_USERNAME = "MyCustomName"; // 想改成什么就自己填
+const CUSTOM_USERNAME = "wxid1707944349503"; // 想改成什么就自己填
 
 (() => {
   let body = $response.body;
